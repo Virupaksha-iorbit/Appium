@@ -11,8 +11,7 @@ import com.aventstack.extentreports.Status;
 
 public class Login_Test extends Baseclass_page {
 
-    private static final long serialVersionUID = 1L;
-	Login_Class loginPage;
+    Login_Class loginPage;
     ExtentTest test;
 
     @BeforeMethod

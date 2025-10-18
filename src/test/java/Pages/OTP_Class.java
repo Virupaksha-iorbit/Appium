@@ -35,7 +35,6 @@ public class OTP_Class {
 
         System.out.println("Initial message timestamp: " + latestSeenTime);
 
-        // Step 2: Wait up to 20 seconds for a new OTP email
         int totalWaitTime = 20000;  // 20 seconds
         int pollInterval = 2000;    // check every 2 seconds
         int attempts = totalWaitTime / pollInterval;
@@ -55,18 +54,18 @@ public class OTP_Class {
                     if (body != null && body.toLowerCase().contains("otp")) {
                         otp = extractOTP(body);
                         if (otp != null) {
-                            System.out.println("✅ Latest OTP fetched: " + otp);
+                            System.out.println("Latest OTP fetched: " + otp);
                             return otp;
                         }
                     }
                 }
             }
 
-            System.out.println("⏳ Waiting for new OTP email... (" + i + ")");
+            System.out.println("Waiting for new OTP email... (" + i + ")");
             Thread.sleep(pollInterval);
         }
 
-        throw new Exception("❌ No new OTP email arrived within 20 seconds.");
+        throw new Exception("No new OTP email arrived within 20 seconds.");
     }
 
     // --- Fetch inbox messages ---
