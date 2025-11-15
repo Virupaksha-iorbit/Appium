@@ -10,13 +10,13 @@
           <include name="setup"/>
         </methods>
       </class> <!-- tests.Login_Test -->
-      <class name="tests.CreateNurseTest">
+      <class name="tests.CreateDoctorTest">
         <methods>
-          <include name="testcreatenurse"/>
           <include name="setup"/>
+          <include name="testcreatedoctor"/>
           <include name="initPage"/>
         </methods>
-      </class> <!-- tests.CreateNurseTest -->
+      </class> <!-- tests.CreateDoctorTest -->
       <class name="tests.OTP_Test">
         <methods>
           <include name="setup"/>

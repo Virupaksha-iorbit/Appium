@@ -12,17 +12,13 @@ import java.util.regex.Pattern;
 
 public class OTP_Class {
 
-    // Mailinator private inbox info
-    private static final String API_TOKEN = "202883a9992c42b797789181d7b54c95";
+    private static final String API_TOKEN = "a169a44135e74253ba38c64959b71d25";
     private static final String DOMAIN = "private";
     private static final OkHttpClient client = new OkHttpClient();
 
-    /**
-     * Fetch the latest OTP from the private inbox.
-     * Waits up to 20 seconds (polls every 2 seconds)
-     */
+    //it will wait 20 seconds for getting the latest OTP
     public static String fetchLatestOTP() throws Exception {
-        String inboxName = "fnhcare24_h01";
+        String inboxName = "automationh1";
         long latestSeenTime = 0;
         String otp = null;
 
@@ -35,8 +31,8 @@ public class OTP_Class {
 
         System.out.println("Initial message timestamp: " + latestSeenTime);
 
-        int totalWaitTime = 20000;  // 20 seconds
-        int pollInterval = 2000;    // check every 2 seconds
+        int totalWaitTime = 20000;
+        int pollInterval = 2000;
         int attempts = totalWaitTime / pollInterval;
 
         for (int i = 1; i <= attempts; i++) {

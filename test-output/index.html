@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateNurseTest" class="method navigator-link" hash-for-method="testcreatenurse">testcreatenurse</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.CreateDoctorTest" class="method navigator-link" hash-for-method="testcreatedoctor">testcreatedoctor</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -140,16 +140,16 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.CreateNurseTest</span>
+              <span class="class-name">tests.CreateDoctorTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testcreatenurse">
-                  </a> <!-- testcreatenurse -->
-                  <span class="method-name">testcreatenurse</span>
+                  <a name="testcreatedoctor">
+                  </a> <!-- testcreatedoctor -->
+                  <span class="method-name">testcreatedoctor</span>
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.test&quot; is null
-	at tests.CreateNurseTest.testcreatenurse(CreateNurseTest.java:45)
+	at tests.CreateDoctorTest.testcreatedoctor(CreateDoctorTest.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -217,7 +217,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--1787506073/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--1844296256/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -228,7 +228,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;tests.Login_Test&quot;/&gt;
       &lt;class name=&quot;tests.OTP_Test&quot;/&gt;
-      &lt;class name=&quot;tests.CreateNurseTest&quot;/&gt;
+      &lt;class name=&quot;tests.CreateDoctorTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -278,22 +278,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testcreatenurse')
-data.setCell(0, 2, 'tests.CreateNurseTest')
-data.setCell(0, 3, 52331);
+data.setCell(0, 1, 'testcreatedoctor')
+data.setCell(0, 2, 'tests.CreateDoctorTest')
+data.setCell(0, 3, 25138);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testValidLogin')
 data.setCell(1, 2, 'tests.Login_Test')
-data.setCell(1, 3, 13569);
+data.setCell(1, 3, 13076);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'enterOTPTest')
 data.setCell(2, 2, 'tests.OTP_Test')
-data.setCell(2, 3, 8884);
+data.setCell(2, 3, 8889);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -312,7 +312,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CreateNurseTest</span>
+              <span class="ignored-class-name">tests.CreateDoctorTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -340,31 +340,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">10762 ms</span>
+                <span class="method-start">7868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">11633 ms</span>
+                <span class="method-start">8611 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.OTP_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">enterOTPTest</span>
-                <span class="method-start">25217 ms</span>
+                <span class="method-start">21699 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.CreateNurseTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.CreateDoctorTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">34109 ms</span>
+                <span class="method-start">30593 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testcreatenurse</span>
-                <span class="method-start">34123 ms</span>
+                <span class="method-name">testcreatedoctor</span>
+                <span class="method-start">30602 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

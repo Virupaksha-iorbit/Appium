@@ -25,8 +25,8 @@ public class Login_Test extends Baseclass_page {
     @Test(priority = 1, groups = {"login"})
     public void testValidLogin() {
     	
-        String username = "FNHCare24_h01@iorbitteam147955.testinator.com";
-        String password = "eae57229-94d9-440a-9192-42c9a7e06d84";
+        String username = "automationH1@iorbitteam815765.testinator.com";
+        String password = "e4e99b33-cb27-426a-b321-9c014393da29";
 
         try {
             loginPage.login(username, password);

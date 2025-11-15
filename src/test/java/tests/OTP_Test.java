@@ -14,6 +14,7 @@ import java.time.Duration;
 public class OTP_Test extends Baseclass_page {
 
     @Test(dependsOnMethods = {"tests.Login_Test.testValidLogin"})
+
     public void enterOTPTest() throws Exception {
        
         String otp = OTP_Class.fetchLatestOTP();

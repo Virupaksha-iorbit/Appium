@@ -22,12 +22,10 @@ public class Baseclass_page {
 
     @BeforeTest
     public void setup() throws MalformedURLException {
-        // ---------- ExtentReports setup ----------
         ExtentSparkReporter spark = new ExtentSparkReporter("target/ExtentReport.html");
         extent = new ExtentReports();
         extent.attachReporter(spark);
 
-        // ---------- Appium setup ----------
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("Android");
         options.setDeviceName("emulator-5554");
@@ -37,7 +35,7 @@ public class Baseclass_page {
         // APK path
         File app = new File(System.getProperty("user.dir") + "/src/test/resources/apps/tech_admin.apk");
         if (app.exists()) {
-            options.setApp(app.getAbsolutePath());   // install from local apk
+            options.setApp(app.getAbsolutePath());
         } else {
             options.setAppPackage("com.techadminapp");
             options.setAppActivity("com.techadminapp.MainActivity");
